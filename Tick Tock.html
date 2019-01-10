@@ -1,0 +1,247 @@
+ <!-- coded buy harsh dave , just for partice -->
+ <!-- enjoy running this code -->
+ <!DOCTYPE html>
+ <html>
+ <head> <title>hacktech </title>
+ <style>
+    body{
+        padding:0;
+        margin:0;
+        background:#333;
+    }
+    .eye {
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        border-radius: 75% 0;
+        overflow: hidden;
+        cursor: pointer
+    }
+    .ball{
+        width:40px;
+        height:40px;
+        background:#222f3e;
+        border-radius:50%;
+        border:30px solid #576574;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);            
+    }
+    .shut{
+        width:300px;
+        height:160px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%) rotate(-45deg);
+        z-index:999;
+    }
+    .shut span{
+        display:block;
+        width:100%;
+        height:15%;
+        background:#ff6b6b;
+        border-radius: 0 0 60% 60%;
+        transition:0.4s all;
+    }
+    .eye:hover > .shut span{
+        height:100%;
+    }
+    body {
+        align-items: center;
+        display: flex;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 4.5vh;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        overflow: hidden;
+        background:#262626
+    }
+
+    .window {
+        color:red;
+        height: 8vh;
+        left: calc(50% - 4vh);
+        position: absolute;
+        top: calc(50% - 19.5vh);
+        width: 8vh;
+    }
+
+    .cut-black {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        color: #fff;
+    }
+
+    .container {
+        animation: 2s Turn infinite linear;
+        height: 32vh;
+        margin-left: -12vh;
+        margin-top: 19.5vh;
+        transform-origin: 50% 0%;
+        width: 32vh;
+    }
+
+    .tick {
+        align-items: center;
+        display: flex;
+        height: 0;
+        justify-content: flex-start;
+        position: absolute;
+        transform-origin: 100% 50%;
+        transform: rotate(var(--angle));
+        width: 16vh;
+    }
+
+        .tick:nth-child(1) {
+            --angle: 0deg;
+        }
+
+        .tick:nth-child(2) {
+            --angle: 30deg;
+        }
+
+        .tick:nth-child(3) {
+            --angle: 60deg;
+        }
+
+        .tick:nth-child(4) {
+            --angle: 90deg;
+        }
+
+        .tick:nth-child(5) {
+            --angle: 120deg;
+        }
+
+        .tick:nth-child(6) {
+            --angle: 150deg;
+        }
+
+        .tick:nth-child(7) {
+            --angle: 180deg;
+        }
+
+        .tick:nth-child(8) {
+            --angle: 210deg;
+        }
+
+        .tick:nth-child(9) {
+            --angle: 240deg;
+        }
+
+        .tick:nth-child(10) {
+            --angle: 270deg;
+        }
+
+        .tick:nth-child(11) {
+            --angle: 300deg;
+        }
+
+        .tick:nth-child(12) {
+            --angle: 330deg;
+        }
+
+    .letter {
+        align-items: center;
+        display: flex;
+        height: 0;
+        justify-content: center;
+        transform: rotate(90deg);
+        width: 0;
+
+
+    }
+
+    .outside-letter {
+        position: absolute;
+        -moz-transform: translateY(1.5vh);
+        color: #fff;
+    }
+
+    .t {
+        top: 25vh;
+    }
+
+    .c {
+        top: 37vh;
+    }
+
+    .k {
+        top: 43vh;
+    }
+
+    @keyframes Turn {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        22% {
+            transform: rotate(30deg);
+        }
+
+        49% {
+            transform: rotate(30deg);
+        }
+
+        69% {
+            transform: rotate(60deg);
+        }
+
+        100% {
+            transform: rotate(60deg);
+        }
+    }
+ </style>
+ </head>
+ <body>
+ 	
+ <div class="eye">
+ 	
+        <div class="shut">
+            <span></span>
+        </div>
+        <div class="ball"></div>
+    </div>
+    <div class="window cut">
+        <div class="container">
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I </div></div>
+            <div class="tick"><div class="letter">O</div></div>
+        </div>
+    </div>
+    <div class="window cut-black">
+        <div class="container">
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+            <div class="tick"><div class="letter">I</div></div>
+            <div class="tick"><div class="letter">O</div></div>
+        </div>
+    </div>
+    <div class="outside-letter t">T</div>
+    <div class="outside-letter c">C</div>
+    <div class="outside-letter k">K</div>
+</body>
+</html>
